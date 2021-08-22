@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Quotes to Scrape</title>
+  </head>
+  <body>
+    <h1 align="center">
+      <font color="#6B8E23">QUOTES TO SCRAPE</font>
+    </h1>
+    <hr width="350px"/>
+    <br />
+    <br />
+    {% for item in data %}
+    <table border="0" style="box-shadow:1px 1px 10px #6B8E23" width="70%" height="70%" align="center">
+      <td style="background-position:center center" valign="top" align="center">
+        <tr>
+          <td>
+              <h3><i>
+                  {{item[0]}} - by {{item[1]}}
+                  </i>
+              </h3>
+          </td>
+        </tr>
+      </td>
+    </table>
+    <br />
+    <br />
+    {% endfor %}
+  </body>
+</html>
